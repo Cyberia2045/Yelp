@@ -38,12 +38,36 @@ function createElement() {
   var divContainer = document.getElementById("main-container");
 
   yelpDetective.places.forEach(function(element) {
+    
     var placeContainer = document.createElement("div");
     placeContainer.classList.add("main-container__place");
-    placeContainer.style.backgroundImage = "url(" + element.image_url + ")";
-    divContainer.appendChild(placeContainer);  
+    divContainer.appendChild(placeContainer); 
+    
+    var pictureContainer = document.createElement("div");
+    pictureContainer.classList.add("main-container__picture");
+    pictureContainer.style.backgroundImage = "url(" + element.image_url + ")";
+    placeContainer.appendChild(pictureContainer);
+
+    var nameText = document.createElement("div");
+    nameText.classList.add("main-container__place-text");
+    var nameTextContent = document.createTextNode(element.name)
+    placeContainer.appendChild(nameTextContent);
+
+    var locationText =document.createElement("div");
+    locationText.classList.add("main-container__place-text");
+    var locationTextContent = document.createTextNode(element.location.address)
+    placeContainer.appendChild(locationTextContent);
   })
 };
 
 yelpButton.addEventListener("click", yelpSearch);
+
+
+
+
+
+
+
+
+
 

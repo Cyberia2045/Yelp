@@ -10,18 +10,17 @@ body {
   color: white; }
 
 .search-div {
-  width: 80%;
-  max-width: 600px;
-  margin: 0 auto; }
+  display: flex;
+  justify-content: space-between;
+  width: 100%; }
 
 .search-input {
-  width: 30%;
+  width: 40%;
   border-radius: 10px;
   margin: 0 auto; }
 
 .yelp-form {
-  margin: 0 auto;
-  width: 100%; }
+  margin: 0 auto; }
 
 .main-container {
   display: flex;
@@ -37,9 +36,23 @@ body {
   max-width: 50%;
   height: 300px;
   max-height: 30%;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: slategray;
+  font-size: 1.2em;
+  text-align: center;
+  color: white; }
+
+.main-container__picture {
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 10px;
+  width: 100%;
+  height: 70%;
   border-radius: 10px; }
+
+.main-container__place-text {
+  font-size: 1.2em;
+  text-align: center;
+  color: white; }
 
 /*# sourceMappingURL=styles.css.map */
