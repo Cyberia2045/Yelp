@@ -38,7 +38,7 @@ body {
   max-height: 30%;
   margin: 10px;
   border-radius: 10px;
-  background-color: slategray;
+  background-color: teal;
   font-size: 1.2em;
   text-align: center;
   color: white; }
@@ -50,9 +50,8 @@ body {
   height: 70%;
   border-radius: 10px; }
 
-.main-container__place-text {
-  font-size: 1.2em;
-  text-align: center;
-  color: white; }
+.main-container__text {
+  height: 15%;
+  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -48,15 +48,19 @@ function createElement() {
     pictureContainer.style.backgroundImage = "url(" + element.image_url + ")";
     placeContainer.appendChild(pictureContainer);
 
-    var nameText = document.createElement("div");
-    nameText.classList.add("main-container__place-text");
-    var nameTextContent = document.createTextNode(element.name)
-    placeContainer.appendChild(nameTextContent);
+    var nameTextContainer = document.createElement("div");
+    nameTextContainer.classList.add("main-container__text");
+    placeContainer.appendChild(nameTextContainer);
 
-    var locationText =document.createElement("div");
-    locationText.classList.add("main-container__place-text");
+    var locationTextContainer = document.createElement("div");
+    locationTextContainer.classList.add("main-container__text");
+    placeContainer.appendChild(locationTextContainer);
+
+    var nameTextContent = document.createTextNode(element.name)
+    nameTextContainer.appendChild(nameTextContent);
+
     var locationTextContent = document.createTextNode(element.location.address)
-    placeContainer.appendChild(locationTextContent);
+    locationTextContainer.appendChild(locationTextContent);
   })
 };
 
