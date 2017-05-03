@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  background-color: teal;
+  font-family: "Futura"; }
+
+.main-heading {
+  text-align: center;
+  color: white; }
+
+.search-div {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto; }
+
+.search-input {
+  width: 30%;
+  border-radius: 10px;
+  margin: 0 auto; }
+
+.yelp-form {
+  margin: 0 auto;
+  width: 100%; }
+
+.main-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 90%;
+  height: auto; }
+
+.main-container__place {
+  width: 300px;
+  max-width: 50%;
+  height: 300px;
+  max-height: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
+  border-radius: 10px; }
+
+/*# sourceMappingURL=styles.css.map */
