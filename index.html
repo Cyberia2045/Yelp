@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yelp</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+
+<h1 class="main-heading">The Philly Phood Detective</h1>
+
+<div class="search-div">
+	<form class="yelp-form">
+		<input id="yelp-search" class="search-input" type="text" name="search" placeholder="Search Yelp">
+		<select id="neighborhood-select" name="neighborhoods">
+			<option value="fishtown">Fishtown</option>
+			<option value="northern-liberties">Northern Liberties</option>
+			<option value="old-city">Old City</option>
+			<option value="port-richmond">Port Richmond</option>
+			<option value="kensington">Kensington</option>
+		</select>
+		<button type="button" id="yelp-button">Search</button>
+	</form>
+</div>
+
+<div id="main-container" class="main-container"></div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
